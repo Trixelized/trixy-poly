@@ -12,7 +12,6 @@ body {
 
 /* Always aligned to center */
 .center-container {
-    position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
@@ -20,8 +19,19 @@ body {
     align-items: center;
 }
 
-.circle-container {
-    outline: 2px solid #fff;
-    width: min(90vmin, 90vmax);
-    height: min(90vmin, 90vmax);
+.center-square {
+    position: absolute;
+    width: min(80vmin, 80vmax);
+    height: min(80vmin, 80vmax);
+}
+
+.circle-bg {
+    position: absolute;
+}
+
+.ball {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(10%)
 }

@@ -1,13 +1,6 @@
-class Circle {
-    constructor(notes) {
-        this.notes = notes;
-    }
-    start() {
-        console.log("Starting with " + this.notes + " notes...")
+
+class Ball {
+    constructor() {
+
     }
 }
-
-
-const circ = new Circle(8)
-
-circ.start()
