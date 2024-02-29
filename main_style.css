@@ -1,37 +1,9 @@
-/* Fill the page completely */
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-}
 
 body {
-    background-color: #111;
-}
+    /* Fixed contents */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 
-/* Always aligned to center */
-.center-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center-square {
-    position: absolute;
-    width: min(80vmin, 80vmax);
-    height: min(80vmin, 80vmax);
-}
-
-.circle-bg {
-    position: absolute;
-}
-
-.ball {
-    position: absolute;
-    left: 0%;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(10%)
+    background-color: #000;
 }
