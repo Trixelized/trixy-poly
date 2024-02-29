@@ -1,0 +1,27 @@
+/* Fill the page completely */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #111;
+}
+
+/* Always aligned to center */
+.center-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-container {
+    outline: 2px solid #fff;
+    width: min(90vmin, 90vmax);
+    height: min(90vmin, 90vmax);
+}
