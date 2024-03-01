@@ -1,9 +1,50 @@
+:root {
+    --red: #ff6370;
+    --white: #f5e5d9;
+    --black: #3f363c;
+
+    --line-width: 4px;
+    --border-rad: 4px;
+  }
 
 body {
     /* Fixed contents */
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
 
-    background-color: #000;
+.scrollzone {
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.page-divider {
+    /* Fit page, snap scroll */
+    width: 100vw;
+    height: 100vh;
+
+    scroll-snap-align: start;
+}
+
+.centerer {
+    /* Center contents */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.face-square {
+    /* Size */
+    width: min(80vw, 80vh);
+    height: min(80vw, 80vh);
+
+    /* Square outline, don't overflow */
+    background-color: var(--white);
+    outline: var(--line-width) solid var(--black);
+    border-radius: var(--border-rad);
+
 }
